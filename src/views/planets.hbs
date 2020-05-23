@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Planets</title>
+        <link rel="icon" href="/img/favicon.png"></link>
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-Bo21yfmmZuXwcN/9vKrA5jPUMhr7znVBBeLxT9MA4r2BchhusfJ6+n8TLGUcRAtL" crossorigin="anonymous">
+        <style>
+            .myImg {
+                position: absolute;
+                right: 10%;
+                border-radius: 100px;
+                height: 500px;
+            }
+
+            .padding {
+                margin-top: 15px;
+                margin-left: 15px;
+            }
+
+            .info {
+                margin-top: 15px;
+                margin-left: 15px;
+             
+            }
+
+            .width {
+                width: 325px;
+            }
+
+
+            
+        </style>
+    </head>
+
+    
+    {{> nav}}
+
+    <body>
+        <h1 class="padding">Planetary Search</h1>
+        <div class="form-group padding">
+            <label class="col-form-label col-form-label-lg" for="inputLarge">Search for a Planet</label>
+            <input class="form-control form-control-lg width" type="text" placeholder="Type a Planet Name" id="inputLarge">
+            <button id="search" type="button" class="btn btn-primary">Search</button>
+        </div>
+
+        
+    
+
+        <div class="card text-white bg-success mb-3 info" style="max-width: 20rem;">
+            <div class="card-header">Planetary Information</div>
+            <div id="planet-info" class="card-body"></div>
+        </div>
+        
+
+
+
+        
+    </body>
+
+
+    <script src="/js/planetSearch.js"></script>
+</html>

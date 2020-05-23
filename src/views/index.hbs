@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="icon" href="/img/favicon.png"></link>
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-Bo21yfmmZuXwcN/9vKrA5jPUMhr7znVBBeLxT9MA4r2BchhusfJ6+n8TLGUcRAtL" crossorigin="anonymous">
+        <style>
+
+            .giphy-embed {
+                position: absolute;
+                right: 25%;
+            }
+
+
+        </style>
+    </head>
+
+    
+    {{> nav}}
+
+    <body>
+        <div class="jumbotron">
+            <h1 class="display-3">Welcome to Star Wars Databank</h1>
+            <p class="lead">This application uses the api from the good folks over at <a href="https://swapi.dev/">SWAPI</a> and allows you to search stats about your favorite entities from
+            the Stars Wars canon universe! You can search up anything from a specific person to a vehicle. 
+            </p>
+            <hr class="my-4">
+            <p>This application extends the current api by allowing searches by name of the entity you are interested in. It also provides a handy UI that handles searches and 
+                serves up data. 
+            </p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="/about" role="button">Learn more</a>
+            </p>
+        </div>
+
+        <iframe src="https://giphy.com/embed/l3fZYDDWJUAQLZ9Cw" width="1000" height="425" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </body>
+
+
+    <script src="/js/planetSearch.js"></script>
+</html>
